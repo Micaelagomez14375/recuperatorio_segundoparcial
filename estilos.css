@@ -1,0 +1,55 @@
+body {
+    background-image: url('fondo.png');
+    display: flex;
+    justify-content: center;
+
+ 
+}
+
+.contenedor {
+    max-width: 50%;
+    width: 100%;
+    background-color: #f8fafc;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0%;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+
+}
+nav a :hover {
+border-radius: 4px;
+}
+
+h1 {
+    color: #3b5a7a;
+}
+
+h2 {
+    color: #3b5a7a;
+}
+
+h3 {
+    color: #3b5a7a;
+}
+
+h4 {
+    color: #3b5a7a;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+}
