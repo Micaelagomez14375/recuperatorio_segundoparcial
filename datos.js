@@ -11,9 +11,10 @@ const datosCuriosos = [
 ];
 
 function mostrarDatoAlAzar() {
-    const indice = Math.floor(Math.random() * datosCuriosos.lenght);
+    const indice = Math.floor(Math.random() * datosCuriosos.length);
     const dato = datosCuriosos [indice];
-    document.getElementaryById("dato-curioso").textContent = dato;
-    document.getElementById("boton-dato").addEventListener("click", mostrarDatoAlAzar);
-    
+    document.getElementById("dato-curioso").textContent = dato;
 }
+
+document.getElementById("boton-dato").addEventListener("click", mostrarDatoAlAzar);
+    
