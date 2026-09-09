@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 body {
     background-image: url('fondo.png');
     display: flex;
     justify-content: center;
-
  
 }
 
@@ -27,10 +28,13 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
+    color: rgb(128, 190, 235);
 
 }
-nav a :hover {
+nav a:hover {
 border-radius: 4px;
+background-color: darkslategray;
+color: aqua;
 }
 
 h1 {
@@ -51,5 +55,8 @@ h4 {
 
 ul {
     list-style: none;
-    align-items: center;
+}
+
+h1, h2, h3, h4, em {
+    font-family: 'Arvo', serif;
 }
