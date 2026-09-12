@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 body {
-    background-image: url('fondo.png');
+    background-image: url('../recuperatorio_segundoparcial/img/fondo.png');
     display: flex;
     justify-content: center;
  
@@ -10,7 +10,7 @@ body {
 .contenedor {
     max-width: 50%;
     width: 100%;
-    background-color: #f8fafc;
+    background-color: #f8fafce7;
     padding: 1rem;
     text-align: center;
 }
@@ -60,3 +60,69 @@ ul {
 h1, h2, h3, h4, em {
     font-family: 'Arvo', serif;
 }
+
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff5e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 18rem;               
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f07d;
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.tarjeta h3 {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  color: #3b5a7a65;             
+  text-align: center;
+
+}
+
+.contenedor-ancho {
+  max-width: 90%;
+}
+
+.columnas {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.columna {
+  flex: 1;
+}
+.columna img {
+  max-width: 100%;
+  height: auto;
+}
+
+.columnas-dos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.columna-principal {
+  flex: 2;
+}
+
+.columna-lateral {
+  flex: 1;
+}
+
+
+

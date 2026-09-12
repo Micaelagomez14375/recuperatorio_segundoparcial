@@ -1,9 +1,9 @@
 const obras = [
-  { nombre: "Process 6",   anio: 2005, img: "imgs/reas-1.jpg" },
-  { nombre: "Process 14",  anio: 2008, img: "imgs/reas-2.jpg" },
-  { nombre: "Process 18",  anio: 2010, img: "imgs/reas-3.jpg" },
-  { nombre: "Process 12",  anio: 2008, img: "imgs/reas-4.jpg" },
-  { nombre: "Process 17",  anio: 2009, img: "imgs/reas-5.jpg" }
+  { nombre: "Process 6",   anio: 2005, img: "img/reas-1.jpg" },
+  { nombre: "Process 14",  anio: 2008, img: "img/reas-2.jpg" },
+  { nombre: "Process 18",  anio: 2010, img: "img/reas-3.jpg" },
+  { nombre: "Process 12",  anio: 2008, img: "img/reas-4.jpg" },
+  { nombre: "Process 17",  anio: 2009, img: "img/reas-5.png" }
 ];
 
 const galeria = document.getElementById("galeria");
@@ -29,3 +29,23 @@ function generarGaleria() {
 }
 
 generarGaleria();
+
+const btnChico = document.getElementById("btnChico");
+const btnGrande = document.getElementById("btnGrande");
+
+function cambiarTamano(ancho) {
+  const tarjetas = document.querySelectorAll(".tarjeta");
+
+  tarjetas.forEach(function(tarjeta) {
+    tarjeta.style.width = ancho;
+  });
+}
+
+btnChico.addEventListener("click", function() {
+  cambiarTamano("12rem");
+});
+
+btnGrande.addEventListener("click", function() {
+  cambiarTamano("24rem");
+});
+
