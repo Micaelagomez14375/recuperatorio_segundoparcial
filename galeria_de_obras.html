@@ -31,11 +31,43 @@
                 <button id="btnChico">Imágenes chicas</button>
                 <button id="btnGrande">Imágenes grandes</button>
              </div>
-             <section>
-               
-             </section>
+             <section class="produccion-estudio">
+            <h2>Producción de instalaciones interactivas</h2>
+          <fieldset id="paso-configuracion">
+                <legend>Configuración general</legend>
+               <label for="cant-instalaciones">Cantidad de instalaciones a producir:</label>
+               <input type="number" id="cant-instalaciones" min="1" step="1" placeholder="Ej: 3">
+               <label for="horas-jornada">Horas por día que trabaja cada persona:</label>
+               <input type="number" id="horas-jornada" min="1" step="0.5" placeholder="Ej: 8">
+               <label for="honorario-hora">Valor del honorario por hora ($):</label>
+               <input type="number" id="honorario-hora" min="0.01" step="0.01" placeholder="Ej: 15000">
+                 <button type="button" id="btn-iniciar-carga">Confirmar configuración</button>
+          </fieldset>
+          <fieldset id="paso-instalaciones" disabled>
+              <legend>Carga de instalaciones</legend>
+                 <p id="contador-instalaciones">Instalaciones cargadas: 0 de <span id="total-instalaciones-lbl">0</span></p>
+                <label for="nombre-instalacion">Nombre de la instalación:</label>
+                <input type="text" id="nombre-instalacion" placeholder="Ej: Mutaciones digitales">
+                <label for="personas-trabajo">Personas necesarias:</label>
+               <input type="number" id="personas-trabajo" min="1" step="1" placeholder="Ej: 4">
+               <label for="dias-produccion">Días estimados de producción:</label>
+               <input type="number" id="dias-produccion" min="1" step="1" placeholder="Ej: 15">
+            <button type="button" id="btn-agregar-instalacion">Agregar instalación</button>
+         </fieldset>
+         <fieldset id="paso-resultados" disabled>
+              <legend>Resultados</legend>
+          <button type="button" id="btn-calcular">Calcular resultados</button>
+    <div id="caja-resultados" class="oculto">
+      <p><strong>Costo total de un día de trabajo:</strong> <span id="res-costo-dia">-</span></p>
+      <p><strong>Instalación con más días:</strong> <span id="res-instalacion-mayor">-</span></p>
+      <p><strong>Porcentaje del costo total del estudio:</strong> <span id="res-porcentaje">-</span></p>
+    </div>
+      <button type="button" id="btn-reiniciar" disabled>Reiniciar</button>
+  </fieldset>
+</section>
       <footer>Para contactarse escribir a casey@artedigital.com</footer>
      </div>
 <script src="galeria.js"></script>
+<script src="ejercicio.js"></script>
 </body>
 </html>
