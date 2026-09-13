@@ -1,1 +1,3 @@
-# recuperatorio_segundoparcial
+Micaela Agustina Gomez
+Segundo parcial-informatica general
+Artes multimediales-UNA
